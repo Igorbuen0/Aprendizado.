@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crie sua conta!</title>
+
+
+</head>
+
+<body>
+    <form action="">
+        <fieldset>
+            <legend><strong> Crie sua conta!!!</strong></legend>
+
+            <label for="nameus">Nome de usuário: </label> <br>
+            <input pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$" title="Pelo menos uma letra maiúscula e também números." required minlength="5" maxlength="10" size="10" type="text" id="nameus">
+            <br>
+            <br>
+
+            <label for="passus">Senha:</label><br>
+            <input pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$"
+                title="A senha precisa ter letras maiúsculas e números." size="14" minlength="7" maxlength="14"
+                type="password" required>
+            <br><br>
+
+
+            <label for="Emailus">Email:</label>
+            <br><input required size="20" type="email">
+
+            <br>
+            <br>
+            <label for="nickus">Nickname:</label><br>
+            <input pattern="[a-z\s]+$" title="Somente letras serão aceitas." required minlength="5" maxlength="10"
+                size="10" type="text" id="nickus">
+            <br>
+            <br>
+            <label for="masc">Male</label>
+            <input required type="radio" id="yep" name="coffee" value="yes">
+            <label for="fem">Famale</label>
+            <input required type="radio" name="coffee" id="nop">
+
+
+            <br>
+            <br>
+
+            <label>Escolha seu mundo: <br>
+                <select required name="world">
+
+                    <optgroup label="Mundos">
+                        <option value="Pazera">Pazera (Non-Pvp)</option>
+                        <option value="Midtera">Midtera (Optional-Pvp)</option>
+                        <option value="Mortera">Mortera (Hard-Pvp)</option>
+                    </optgroup>
+                    <br>
+                    <br>
+                </select>
+            </label>
+            <br>
+            <br>
+            <br>
+            <label for="subscribe">Aceito os termos de condição</label>
+<input type="checkbox" name="subscribe" id="subscrbe" value="ok" checked>
+<br>
+<br>
+
+<textarea aria-label="Digite como foi sua experiência com o nosso formulario." cols="30" rows="3" placeholder="Conte a sua experiência com o formulario!"></textarea>
+<br><br>
+
+            <button>ENVIAR</button>
+
+
+            
+
+        </fieldset>
+    </form>
+
+
+</body>
+
+</html>
